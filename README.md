@@ -13,7 +13,7 @@ Para instalar el proyecto, sigue estos pasos:
 
 asegurate de tener instalado Node.js y npm en tu máquina.
 
-##Ejemplo de uso 
+## Ejemplo de uso 
 
 Aqui hay algunos ejemplos de cómo puedes usar el proyecto:
 
@@ -21,6 +21,6 @@ Aqui hay algunos ejemplos de cómo puedes usar el proyecto:
 
 1. ejecutar comando en la terminal del editor (VCode): 'npm run dev'
 
-##Estado del Proyecto
+## Estado del Proyecto
 
 Actualmente en desarrollo.
