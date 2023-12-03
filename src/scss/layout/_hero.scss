@@ -1,0 +1,69 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/boton' as btn;
+
+.hero {
+    background-image: url('../../../img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include m.tablet{
+        background-image: none;        
+    }
+
+
+    .content__hero {
+        background-color: rgba(34, 32, 34, 0.5);    
+        
+        @include m.phone{
+            height:60rem ;
+            position: relative;
+        }
+        @include m.tablet{
+            background-color: white;
+            height:60rem ;
+            position: relative;
+        }
+        
+        .hero__info {
+            padding: 1.5rem;
+            
+            .hero__titulo {
+                font-size: 4rem;
+                text-transform: capitalize;
+                color: v.$white;
+                line-height: 1.5;
+                @include m.tablet{
+                    color: v.$color-titulos;
+                    font-size: 5rem;
+                }
+            }
+
+            .hero__parrafo {
+                font-size: 2rem;
+                font-weight: lighter;
+                color: white;
+                @include m.tablet{
+                    color: v.$color-titulos;
+                }
+            }
+        }
+
+        .content__img{
+            text-align: center; 
+            @include m.desktop{
+                height: 100%;
+            }
+            .hero__img {
+                display: none;
+                @include m.tablet{
+                    border-radius:  50% 5% 50% 5%;
+                    display: inline-block;
+                    height: 100%;
+                    width: auto;   
+                }
+               
+            }
+        }
+    }
+}

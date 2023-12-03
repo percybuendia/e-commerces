@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/titulo' as t;
+
+.footer{
+    background-color:v.$fd-footer;
+        margin-bottom: 6rem;
+    @include m.phone{
+        margin-bottom: 0;
+    }
+
+    .contenedor__footer{
+        .footer__titulo{
+            text-transform: capitalize;
+        }
+        .footer__copyright{
+            .footer__date{
+               color:v.$bg-boton; 
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/boton' ;
+
+.producto{
+    border-radius: 2rem;
+    overflow: hidden;
+    .producto__img{
+        padding: 0;
+    }
+
+    .contenedor__descripcion{
+        padding: 2rem 3rem;
+        background-color: v.$fd-verde-claro-plantas;
+        .producto__name{
+            font-family: v.$font-titulo;
+            font-size: 6rem;
+            text-transform: capitalize;
+            margin-bottom: 2rem;
+        }
+
+        .producto__descripcion{
+            font-size: 1.5rem;
+            font-family: v.$font-parrafos;
+        }
+        
+        .producto__precio{
+            font-size: 4rem;
+            font-family: v.$font-parrafos;
+        }
+
+        .producto__btn{
+            padding: 1rem 3rem;
+            font-family: v.$font-parrafos;
+            text-transform: uppercase;
+        }
+    }
+}

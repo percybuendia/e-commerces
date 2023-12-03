@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+.titulo{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: v.$fondo-dark ;
+    font-weight: bold;
+}
+
+
+.sub__titulo{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: v.$fondo-dark ;
+    font-weight: bold;
+}

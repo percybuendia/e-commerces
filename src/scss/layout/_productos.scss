@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/titulo' as t;
+@use 'base/boton' ;
+
+.productos {
+    background-color: v.$fd-verde-claro-plantas;
+    margin: 5rem 0;
+    padding: 5rem 0;
+
+    .titulo {
+        margin-bottom: 4rem;
+        font-family: v.$font-titulo;
+        font-size: 3rem;
+        color: v.$color-titulos;
+    }
+
+    .content__productos {
+
+        .producto {
+            border: solid 0.1rem v.$fondo-dark;
+            border-radius: 2rem;
+            text-align: center;
+            background: white;
+            width: 48%;
+            @include m.desktop{
+                width: 23.5%;
+            }
+         
+
+            .producto__descripcion {
+                .sub__titulo {
+                    font-family: v.$font-titulo;
+                    text-transform: capitalize;
+                    font-size: 1.5rem;
+                    padding-top: 2rem;
+                    @include  m.phone{
+                        font-size: 2.5rem;
+                    }
+        
+                }
+
+                .boton {
+                    margin: 1rem 0;
+                    @include  m.phone{
+                        margin:  2rem 0;
+                    }
+        
+                    a {
+                        text-transform: capitalize;
+                        color: v.$white;
+                        font-family: v.$font-parrafos;
+                        &:hover{
+                            color: black;
+                        }
+                        @include  m.phone{
+                            font-size: 2rem;
+
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+}

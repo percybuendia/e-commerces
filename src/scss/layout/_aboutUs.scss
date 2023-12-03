@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.aboutUs {
+    margin: 2rem;
+    .aboutUs__descripcion {
+        padding: 2rem;
+        .aboutUs__titulo{
+            font-size: 5.5rem;
+            text-align: center;
+            margin: 2.5rem 0  ;
+            text-transform: uppercase;
+            color:v.$fondo-dark;
+            font-family: v.$font-titulo;
+            font-weight: 600;
+        }
+        .aboutUs__parrafo{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    }
+
+    .aboutUs__equipo{
+        padding: 2rem;
+        img{
+            border-radius: 20rem  ;
+            border-top-left-radius : 0rem ;
+            @include m.phone{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    
+}

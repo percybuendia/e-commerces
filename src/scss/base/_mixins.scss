@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+@mixin phone(){
+    @media (width > 480px){
+        @content;
+    }
+}
+
+@mixin tablet(){
+    @media (width > v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media (width > v.$desktop){
+        @content;
+    }
+}
+
+@mixin desktopLarge(){
+    @media (width > v.$desktopLarge){
+        @content;
+    }
+}
+
+@mixin grid($colums, $gap, $rows){
+    display: grid;
+    grid-template-columns: repeat($colums , 1fr);
+    grid-template-rows: $rows , auto;
+    gap: $gap;
+}
+
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

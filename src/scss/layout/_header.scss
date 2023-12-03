@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/titulo' as t;
+
+
+.header{
+    background-color: v.$fd-verde-claro-plantas;
+    .content__header{
+        .form-control{
+            @include m.phone{
+                height: 3.5rem;
+            }
+        }
+        .content__enlaces{
+            .enlace{
+                    font-size: 2rem;
+                    color: v.$fondo-dark;
+                    @include m.phone{
+                        padding: 0 1rem;
+                    }
+            }
+        }
+    }
+}

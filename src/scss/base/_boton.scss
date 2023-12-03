@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+.boton{
+    a{
+        font-size: 1.5rem;
+        background: v.$bg-boton;
+        border:transparent solid 1px;
+        color: v.$white;
+        &:hover{
+            background: v.$fd-maceta;
+            color: black;
+            border: solid 1px v.$bg-boton;
+        }
+    }
+
+}
+

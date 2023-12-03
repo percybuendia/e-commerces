@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.categorias {
+    .content__categorias {
+        .enlaces__items {
+            border-radius: 2rem;
+            padding: 2rem 1rem;
+            text-decoration: none;
+            text-transform: capitalize;
+
+            h3 {
+                text-align: center;
+                font-family: v.$font-titulo;
+                font-weight: 900;
+                color: v.$bg-boton;
+            }
+        }
+
+
+        .enlace__plantas {
+            background-color: v.$fd-verde-claro-plantas;
+        }
+
+        .enlace__macetas {
+            background-color: v.$fd-maceta;
+        }
+
+        .enlace__accesorios {
+            background-color: v.$fd-accesorios;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fantasmas{
+height: 50rem;
+}

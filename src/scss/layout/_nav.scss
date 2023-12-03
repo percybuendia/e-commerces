@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.content__nav {
+    position: fixed;
+    bottom: 0rem;
+    background: v.$fondo-dark;
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: 0;
+    @include m.phone{
+        position: static;
+        bottom: 0rem;
+        background:none;
+        border-radius: 0;
+        padding: 2rem 0;
+    }    
+    .nav {
+        @include m.phone{
+            background: none;
+            position: initial;
+        }
+    
+        .nav-item {
+            font-size: 1.2rem;
+            @include m.phone{
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                @include m.phone{
+                    color: v.$bg-boton;
+                    border-radius: .5rem;
+                    &:hover{
+                        background-color: v.$bg-boton;
+                        color: v.$white;
+                    }
+                }
+                text-transform: capitalize;
+                color: white;
+
+                i {
+                    display: block;
+                    font-size: 2rem;
+                    text-align: center;
+                    @include m.phone{
+                        display: none;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+}
