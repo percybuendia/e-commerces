@@ -15,8 +15,6 @@ asegurate de tener instalado Node.js y npm en tu máquina.
 
 ## Ejemplo de uso 
 
-Aqui hay algunos ejemplos de cómo puedes usar el proyecto:
-
 ´´´bash
 
 1. ejecutar comando en la terminal del editor (VCode): 'npm run dev'
